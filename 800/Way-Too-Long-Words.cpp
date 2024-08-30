@@ -3,8 +3,7 @@
 //
 
 /*
- * Problem : Way Too Long Words
- * Link : https://codeforces.com/problemset/problem/71/A
+ * Problem : https://codeforces.com/problemset/problem/71/A
  */
 
 #include <bits/stdc++.h>
@@ -12,6 +11,7 @@ using namespace std;
 
 int main() {
     int t;  cin >> t;
+
     while(t--) {
         string s;   cin >> s;
         long int n = s.length();
@@ -20,5 +20,6 @@ int main() {
         else
             cout << s << endl;
     }
+
     return 0;
 }
