@@ -3,7 +3,6 @@
 //
 
 /*
- * [Not Submitted]
  * Problem Name : Dora's Set
  * Problem Link : https://codeforces.com/contest/2007/problem/A
  */
@@ -45,6 +44,7 @@ int main() {
     int t;  cin >> t;
     vector<vector<int>> nums;
 
+    // Since the GCD of consecutive odd numbers is 1, counting the set of odd numbers
     while(t--) {
         int l, r, c = 0;   cin >> l >> r;
         if(l % 2 == 0) {
