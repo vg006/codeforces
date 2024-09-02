@@ -3,7 +3,6 @@
 //
 
 /*
- * [Not submitted]
  * Problem : https://codeforces.com/problemset/problem/1291/A
  * Tags : [greedy] [math] [strings]
  */
@@ -16,22 +15,22 @@ bool isOdd(int n) {
 }
 
 int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
     int t;  cin >> t;
     while(t--) {
-        int n, numlen, anslen = 0;
-        unsigned long long int num, ans = 0;
+        int n, numlen;
+        string num, ans = "";
         cin >> numlen >> num;
-        while(num) {
-            n = num % 10;
+        for(char ch : num) {
+            n = ch - '0';
             if(isOdd(n)) {
-                cout << n;
-                ans += n * pow(10,anslen);
-                anslen++;
+                ans.push_back(ch);
             }
-            num /= 10;
         }
-        ans = !isOdd(anslen) ? ans : ans /10;
-        cout << endl << (ans ? ans : -1) << endl;
+        if(isOdd(ans.length()))
+            ans.pop_back();
+        cout << (ans.length() ? ans : "-1") << endl;
     }
     return 0;
 }

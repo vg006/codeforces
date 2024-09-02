@@ -3,6 +3,7 @@
 //
 
 /*
+ * [Not Submitted]
  * Problem Name : Sakurako's Hobby
  * Problem Link : https://codeforces.com/contest/2008/problem/D
  */
