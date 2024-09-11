@@ -10,7 +10,7 @@
 
 #include <bits/stdc++.h>
 using namespace std;
-
+`
 int minOps(vector<int> t) {
     int x = t[0], y = t[1], k = t[2];
 
